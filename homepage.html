@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Homework I</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Booking Manager</a></li>
+            <li><a href="#">Sail Turkey</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <a class="brand" href="#">Turkey</a>
+        <a href="#">Turkey Package Tours</a>
+        <a href="#">Tours by Destination</a>
+        <a href="#">Turkey Blue Cruises</a>
+        <a href="#">Hotels</a>
+        <a href="#">Transfer</a>
+        <a href="#">Bus</a>
+        <a href="#">Ferry</a>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Somewhere City Tour</h1>
+        <img src="images.jpg">
+        <div class="tabs">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'General')" id="defaultOpen">General</button>
+                <button class="tablinks" onclick="openTab(event, 'Price')">Price & Inclusions</button>
+                <button class="tablinks" onclick="openTab(event, 'Sight')">Sights Visited</button>
+                <button class="tablinks" onclick="openTab(event, 'Contact')">Contact Us</button>
+            </div>
+            <hr>
+            <!-- Tab content -->
+            <div id="General" class="tabcontent">
+                <h3>City Tour</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Price" class="tabcontent">
+                <h3>Price & Inclusion</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Sight" class="tabcontent">
+                <h3>Sights Visited</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Contact" class="tabcontent">
+                <h3>Contact</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="gallery">
+            <h1>Tour Gallery</h1>
+
+            <a target="_blank" href="gallery-1.jpg">
+                <img src="gallery-1.jpg" alt="" width="200" height="200">
+            </a>
+            <a target="_blank" href="gallery-2.jpg">
+                <img src="gallery-2.jpg" alt="" width="200" height="200">
+            </a>
+
+            <a target="_blank" href="gallery-3.jpg">
+                <img src="gallery-3.jpg" alt="" width="200" height="200">
+            </a>
+
+            <a target="_blank" href="gallery-4.jpg">
+                <img src="gallery-4.jpg" alt="" width="200" height="200">
+            </a>
+
+            <a target="_blank" href="gallery-5.jpg">
+                <img src="gallery-5.jpg" alt="" width="200" height="200">
+            </a>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer-column">
+            <hr>
+            <a href="#">HOMEPAGE</a><br>
+            <a href="#">TURKEY PACKAGE TOURS</a><br>
+            <a href="#">TOURS by DESTINATION</a>
+        </div>
+        <div class="footer-column">
+            <hr>
+            <a href="#">ABOUT US</a><br>
+            <a href="#">CONTACT</a><br>
+            <a href="#">TERMS & CONDITIONS</a>
+        </div>
+        <div class="footer-column">
+            <hr>
+            <a href="#">FACEBOOK</a><br>
+            <a href="#">TWITTER</a>
+        </div>
+        <div class="footer-column">
+            <hr>
+        </div>
+    </div>
+    <hr>
+    <p>&copy; Mehmet Beraat Sağın 2019 </p>
+    <script>
+        document.getElementById("defaultOpen").click();
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</footer>
+
+</html>
